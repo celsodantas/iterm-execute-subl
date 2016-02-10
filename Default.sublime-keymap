@@ -1,0 +1,8 @@
+[
+  {
+    "keys": ["ctrl+alt+r"], "command": "iterm_execute_run_current_file",
+  },
+  {
+    "keys": ["ctrl+alt+super+r"], "command": "iterm_execute_run_current_context",
+  },
+]

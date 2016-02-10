@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "iTerm Execute: Run current test file",
+        "command": "iterm_execute_run_current_file",
+    },
+    {
+        "caption": "iTerm Execute: Run current test of context",
+        "command": "iterm_execute_run_current_context",
+    }
+]
