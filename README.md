@@ -25,3 +25,13 @@ end
 ```
 
 It will convert `title of the test` to `title_of_the_test`.
+
+## Installation
+
+
+Manual installation:
+
+```
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+git clone git@github.com:celsodantas/iterm-execute-subl.git ItermExecute
+```
