@@ -1,11 +1,10 @@
+import sublime, sublime_plugin
 import re
 import subprocess
-import sublime, sublime_plugin
 
 class Helper:
   @classmethod
   def get_test_title(cls, title):
-    print(re.search('test .+ do', title))
     if re.findall('test .+ do', title) != None:
       m = re.search('[\'|"](.+)[\'|"]', title)
 
@@ -17,8 +16,10 @@ class Helper:
       return None
 
   @classmethod
-  def turn_text_to_regex(cls, text):
-    return text.replace(" ", "_")
+  def text_to_regex(cls, text):
+    return text.replace(" ", "_")\
+               .replace("!", "\\!")\
+               .replace("#", "\\#")
 
   @classmethod
   def file_name_from_project(cls, file_path, project_path):
