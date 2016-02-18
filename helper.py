@@ -17,9 +17,10 @@ class Helper:
 
   @classmethod
   def text_to_regex(cls, text):
-    return text.replace(" ", "_")\
-               .replace("!", "\\!")\
-               .replace("#", "\\#")
+    return text.replace(" ", "_") \
+               .replace("!", "\\!") \
+               .replace("#", "\\#") \
+               .replace("'", "\\'")
 
   @classmethod
   def file_name_from_project(cls, file_path, project_path):
