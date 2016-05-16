@@ -20,7 +20,9 @@ class Helper:
     return text.replace(" ", "_") \
                .replace("!", "\\!") \
                .replace("#", "\\#") \
-               .replace("'", "\\'")
+               .replace("'", "\\'") \
+               .replace("(", "\\\(") \
+               .replace(")", "\\\)") 
 
   @classmethod
   def file_name_from_project(cls, file_path, project_path):
