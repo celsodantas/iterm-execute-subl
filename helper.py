@@ -22,7 +22,7 @@ class Helper:
                .replace("#", "\\#") \
                .replace("'", "\\'") \
                .replace("(", "\\\(") \
-               .replace(")", "\\\)") 
+               .replace(")", "\\\)")
 
   @classmethod
   def file_name_from_project(cls, file_path, project_path):
@@ -38,12 +38,10 @@ class Helper:
     cmd = cls._escape_dquote(cmd)
 
     script = '''
-       tell application "iTerm"
-         tell the current terminal
+       tell application "iTerm2"
+         tell current session of first window
            activate current session
-           tell the current session
-             write text "code"
-           end tell
+           write text "code"
          end tell
        end tell
     '''
